@@ -1,0 +1,40 @@
+{
+  "name": "creditcard",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "dependencies": {
+    "atob": "^2.1.2",
+    "edit-json-file": "^1.2.0",
+    "jasmine-allure-reporter": "^1.0.2",
+    "jasmine-reporters": "^2.2.1",
+    "jasmine-spec-reporter": "^4.2.1",
+    "jslint": "^0.12.0",
+    "jsonfile": "^5.0.0",
+    "log4js": "^3.0.6",
+    "log4js-protractor-appender": "^1.1.2",
+    "moment": "^2.19.3",
+    "package": "^1.0.1",
+    "package.json": "^2.0.1",
+    "protractor": "^5.4.4",
+    "protractor-image-comparison": "^1.4.0",
+    "remote": "^0.2.6",
+    "update-json-file": "^1.1.1",
+    "webdriver-manager": "^12.1.7",
+    "xvfb": "^0.2.3"
+  },
+  "scripts": {
+    "webdriver-update": "webdriver-manager update",
+    "webdriver-start": "webdriver-manager start",
+    "test": "protractor configFile/conf.js",
+    "SupportTest": "webdriver-manager update && protractor src/main/Support/Conf/SupportConf.js --troubleshoot true"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "babel-preset-es2015": "6.24.1",
+    "babel-register": "6.26.0",
+    "protractor-beautiful-reporter": "^1.2.1",
+    "protractor-jasmine2-html-reporter": "0.0.7"
+  }
+}
